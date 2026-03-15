@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#171dcfff",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#152111",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 py-4 lg:px-20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">temple_buddhist</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight">Cultura China</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary text-sm font-bold border-b-2 border-primary">Inicio</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="history.html">Historia</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="traditions.html">Tradiciones</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="animals.html">Animales</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="funfacts.html">Curiosidades</a>
+</nav>
+</div>
+
+<button class="flex items-center justify-center p-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-1 max-w-7xl mx-auto w-full px-6 md:px-20 py-10">
+<!-- Hero Section -->
+<div class="px-6 lg:px-20 py-12 lg:py-20">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col gap-8 lg:flex-row items-center">
+<div class="w-full lg:w-1/2 aspect-video bg-cover bg-center rounded-xl shadow-2xl overflow-hidden order-2 lg:order-1" data-alt="Great Wall of China landscape at sunset" style='background-image: url("https://img.freepik.com/fotos-premium/imagen-fotografica-fondo-pantalla-hd-castillo-chino_993236-7470.jpg");'>
+</div>
+<div class="flex flex-col gap-6 w-full lg:w-1/2 order-1 lg:order-2">
+<div class="flex flex-col gap-4">
+<h1 class="text-slate-900 dark:text-slate-100 text-4xl lg:text-6xl font-black leading-tight tracking-tight">
+                                        Explora la <span class="text-primary">Cultura China</span>
+</h1>
+<h2 class="text-slate-600 dark:text-slate-400 text-lg lg:text-xl font-normal leading-relaxed">
+                                        Un viaje a través de milenios de historia, tradiciones milenarias y una naturaleza que quita el aliento.
+                                    </h2>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Sections Grid -->
+<div class="px-6 lg:px-20 py-12 bg-primary/5">
+<div class="max-w-[1280px] mx-auto">
+<h2 class="text-slate-900 dark:text-slate-100 text-3xl font-bold leading-tight mb-8">Nuestras Secciones</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Section Card 1 -->
+<a href="history.html">
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-6 aspect-square overflow-hidden cursor-pointer" data-alt="Ancient Chinese architecture temple silhouette" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQuVsXfq85k4AA3V1m4wY7IIsRFJku8VumlRT3cU8yuPJOQLSx2tgwvDFIudmsjEw19yighWy3wKyC0BFQXFH13xT74varLWmoPQGOnLfyAl5YbobTE-Yg8m0a-m-dqNicACSMxABi9nAfh6YPaShmVoT1Fqoa95TjPD2h5N68kw_3uwacCAlQy3-IiGgJvi_KaGu170lanyNJVsCAt-MxqhqiLprYX72cU_iVOe9hLLnrwbwxt5fEc1n_RMQ-jxllMJOn-Q4FrXIz");'>
+<div class="z-10 transition-transform group-hover:-translate-y-2">
+<span class="material-symbols-outlined text-primary mb-2">history_edu</span>
+<p class="text-white text-xl font-bold">Historia</p>
+<p class="text-white/70 text-sm mt-1">Descubre las dinastías más relevantes</p>
+</div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<!-- Section Card 2 -->
+<a href="traditions.html">
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-6 aspect-square overflow-hidden cursor-pointer" data-alt="Traditional Chinese tea ceremony elements" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA0izAXrVCWToQpxXEwPSSFFmz00NBTsbrU-cRwOpjl8SmFoXRWxrd8yvKk8itkEklXuaebkeOqFZiDLo4YFw8c5m572cJitrJvCeM2nGNxsDc2zFSKqOLXLoVZwo_shx7LKowBViw_W6tWmvJMXPoerQl2eUUbD_KHL04aa9uJ_PZBPT-MnUmQDPbYIDXVXKSZTE-cUjIFNTC6ENlKeKrDB2OzVn9a-O2H2nZpm90P1N7tTjUylviHdTnoGhpHHa8zIem_BtSBxYwq");'>
+<div class="z-10 transition-transform group-hover:-translate-y-2">
+<span class="material-symbols-outlined text-primary mb-2">festival</span>
+<p class="text-white text-xl font-bold">Tradiciones</p>
+<p class="text-white/70 text-sm mt-1">Costumbres y celebraciones únicas</p>
+</div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<!-- Section Card 3 -->
+<a href="animals.html">
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-6 aspect-square overflow-hidden cursor-pointer" data-alt="Giant panda eating bamboo in China" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAl2yBzrgrMt1P-BhZ06adY3l5FwvWRfI3KK2OxKSOf7C0Ij67I1vgxmMnML7fFaQxYWthlKBEFlnfvb8f13GlMAWU3I7Xka_2DGoqN9YLN6xqSNl4Q-eiqqCAdx0TsH2JZin8PiMkFy3ycPYUM-EirzsuaGZMKJIFuQ0pzSwU0Z6cSAWI3KatKJ2OvfWlFdZuia3rs5Ams9xhiXzlR5NNaX_BKscfHyyOW7LcvCyWvJeAmDRz-bSXWbtlxt4Y1etE5q7iHd2m6dGVM");'>
+<div class="z-10 transition-transform group-hover:-translate-y-2">
+<span class="material-symbols-outlined text-primary mb-2">pets</span>
+<p class="text-white text-xl font-bold">Animales</p>
+<p class="text-white/70 text-sm mt-1">Fauna exótica y simbólica</p>
+</div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<!-- Section Card 4 -->
+<a href="funfacts.html">
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-6 aspect-square overflow-hidden cursor-pointer" data-alt="Abstract glowing lanterns in Chinese city" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZFQCXRIZ_fZ-ilgWRLlSJmfEq9WJfFCrFZ_aAwURvetMJ9JsiQX1Y5tuSHq7MUpXfSKejnSm8RiHExcPLAZ2q3GqrSwquF9yQuZtflOR9jG0q7_gcU9BKnZ_fSaEZb4VQ58-06ld0_Nw7XonS3fYkKarjs01mwQtZnw9RKca-sakJtBQB_EBCEQ-ogVt8sAqpD2oxvHFxYUrIVUHxJmjtoKuCPOQHDxcgmwg5EGI6JQst1XDqYhpxf-bZVPuCBh-RvaIOY-cnkvK_");'>
+<div class="z-10 transition-transform group-hover:-translate-y-2">
+<span class="material-symbols-outlined text-primary mb-2">lightbulb</span>
+<p class="text-white text-xl font-bold">Datos Curiosos</p>
+<p class="text-white/70 text-sm mt-1">Secretos que te sorprenderán</p>
+</div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="px-6 lg:px-20 py-10 border-t border-primary/10 bg-white dark:bg-background-dark/80">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">temple_buddhist</span>
+<span class="text-slate-900 dark:text-slate-100 font-bold">Cultura China</span>
+</div>
+
+</div>
+</footer>
+</div>
+</div>
+</body></html>
